@@ -8,6 +8,7 @@ body {
 
 h1, h2, h3, h4, h5 {
 	font-weight: 700;
+	line-height: 1.5;
 }
 
 #main-menu a {
@@ -21,5 +22,45 @@ h1, h2, h3, h4, h5 {
 
 .sign-in a {
 	border: 2px solid $teal;
-	border-radius: 7px;
+	border-radius: 5px;
+}
+
+.lead-row, .secondary-row {
+	padding: 150px 10vw;
+}
+
+.lead-detail, .secondary-detail {
+	font-size: 1.3em;
+    color: #6A6A6A;
+    margin-top: 20px;
+}
+
+.get-started-buttons {
+	border-left: 10px solid $orange;
+	padding: 15px;
+	margin-top: 30px;
+}
+
+.get-started-buttons h2 {
+	font-size: 1.5em;
+	margin-top: 0;
+}
+
+.started-buttons {
+	border-radius: 5px;
+	font-size: 1.2em;
+	width: 150px;
+	text-align: center;
+	padding: 15px;
+	color: #fff;
+	background-color: $teal;
+	margin: 20px 30px 0 0;
+	display: inline-block;
+}
+
+.teacher-scene {
+	background-image: url(../imgs/teacher_desk.svg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	min-height: 300px;
 }
