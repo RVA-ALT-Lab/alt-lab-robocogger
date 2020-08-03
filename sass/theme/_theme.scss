@@ -11,6 +11,10 @@ h1, h2, h3, h4, h5 {
 	line-height: 1.5;
 }
 
+#wrapper-navbar {
+	margin-top: 40px;
+}
+
 #main-menu a {
 	color: $teal;
 	text-transform: uppercase;
@@ -27,6 +31,9 @@ h1, h2, h3, h4, h5 {
 
 .lead-row, .secondary-row {
 	padding: 150px 10vw;
+	background-image: url(../imgs/orange_blob.svg);
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .lead-detail, .secondary-detail {
