@@ -48,13 +48,15 @@ defined( 'ABSPATH' ) || exit;
 	<!--end lead row-->
 
 	<div class="row secondary-row">
-		<div class="col-md-7">
+		<div class="col-md-6">
 			<h2><?php the_field('second_message');?></h2>
 			<div class="secondary-detail">
 				<?php the_field('second_message_details');?>
 			</div>
+			<a class="secondary-button" href="<?php the_field('second_message_button_link');?>"><?php the_field('second_message_button_text');?></a>
 		</div>
-		<div class="col-md-7">
+		<div class="col-md-5 offset-md-1">
+			<?php the_field('second_message_video_embed');?>
 		</div>
 	</div>
 

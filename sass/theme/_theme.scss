@@ -58,9 +58,44 @@ h1, h2, h3, h4, h5 {
 	display: inline-block;
 }
 
+.started-buttons:hover {
+	color: #fff;
+}
+
 .teacher-scene {
 	background-image: url(../imgs/teacher_desk.svg);
 	background-repeat: no-repeat;
 	background-size: contain;
 	min-height: 300px;
+}
+
+
+.secondary-row {
+	background-image: url(../imgs/yellow_cog.svg);
+	background-repeat: no-repeat;
+	background-position: 3% 10%;
+	background-size: 300px;
+	background-color: #FAF8F7;
+}
+
+.secondary-button {
+	color: $teal;
+    font-size: 1.2em;
+    width: 160px;
+    text-align: center;
+    padding: 12px;
+    border: 2px solid #2a8080;
+    border-radius: 5px;
+    margin: 30px 0;
+    display: block;
+}
+
+
+#wrapper-footer {
+	background-color: #000;
+	color: #fff;
+}
+
+#full-width-page-wrapper {
+	padding-bottom: 0;
 }
