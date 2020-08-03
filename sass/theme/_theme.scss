@@ -1,1 +1,25 @@
 // This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+body {
+	font-family: 'Poppins', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+	font-weight: 700;
+}
+
+#main-menu a {
+	color: $teal;
+	text-transform: uppercase;
+	font-size: 1.2em;
+	width: 150px;
+	text-align: center;
+	padding: 12px;
+}
+
+.sign-in a {
+	border: 2px solid $teal;
+	border-radius: 7px;
+}

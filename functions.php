@@ -29,3 +29,35 @@ $understrap_includes = array(
 foreach ( $understrap_includes as $file ) {
 	require_once get_template_directory() . '/inc' . $file;
 }
+
+
+
+
+//ACF SAVE and LOAD JSON
+add_filter('acf/settings/save_json', 'alt_robocog_json_save_point');
+ 
+function alt_robocog_json_save_point( $path ) {
+    
+    // update path
+    $path = get_stylesheet_directory() . '/acf-json';
+    // return
+    return $path;
+    
+}
+
+
+add_filter('acf/settings/load_json', 'alt_robocog_json_load_point');
+
+function alt_robocog_json_load_point( $paths ) {
+    
+    // remove original path (optional)
+    unset($paths[0]);
+    
+    // append path
+    $paths[] = get_stylesheet_directory()  . '/acf-json';
+    
+    
+    // return
+    return $paths;
+    
+}
